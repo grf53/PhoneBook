@@ -10,8 +10,6 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-import com.example.listview.R;
-
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -35,16 +33,18 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
+import com.example.phonebook.R;
+
 public class MainActivity extends Activity {
 	
 	private DataListView listview;
 	private PhoneBookListAdapter adapter;
 	private LinkedList<PhoneBookItem> list;
 	private int size;
-
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
-    	super.onCreate(savedInstanceState);
+    	//super.onCreate(savedInstanceState);
     	ActionBar actionBar = getActionBar();
 		actionBar.setDisplayUseLogoEnabled(false);
 		actionBar.setDisplayShowTitleEnabled(false);
