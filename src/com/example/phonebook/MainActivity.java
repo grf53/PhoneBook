@@ -164,15 +164,16 @@ public class MainActivity extends Activity {
     	final String dirPath = Environment.getExternalStorageDirectory()+"/ExportPhoneBook";
     	final String filePath = dirPath+"/phonebook.txt";
     	     	
+    	File dir = new File(dirPath);
+    	if(!dir.exists())
+    		dir.mkdirs();
+    	
     	new AsyncTask<Writer, Void, Writer>(){
     		
     		private ProgressDialog progress;
     		
     		@Override
     		protected void onPreExecute() {
-    			File dir = new File(dirPath);
-    	    	if(!dir.exists())
-    	    		dir.mkdirs();
     			Collections.sort(list, new Comparator<PhoneBookItem>() {
     				@Override
     				public int compare(PhoneBookItem lhs, PhoneBookItem rhs) {

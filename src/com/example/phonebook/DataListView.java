@@ -30,6 +30,7 @@ public class DataListView extends ListView {
 		setOnItemClickListener(
 			new OnItemClickListener() {
 				
+				@Override
 				public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 					
 					if (selectionListener == null) {
@@ -48,6 +49,7 @@ public class DataListView extends ListView {
 
 	}
 
+	@Override
 	public BaseAdapter getAdapter() {
 		return (BaseAdapter)super.getAdapter();
 	}
