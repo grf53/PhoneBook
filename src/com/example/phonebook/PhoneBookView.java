@@ -1,7 +1,5 @@
 package com.example.phonebook;
 
-import com.example.phonebook.R;
-
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;

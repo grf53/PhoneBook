@@ -3,8 +3,6 @@ package com.example.phonebook;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.phonebook.R;
-
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
