@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ 	>
+ 	
+ 	<ImageView 
+ 		android:id="@+id/photoImageView" 
+  		android:layout_width="wrap_content" 
+  		android:layout_height="wrap_content"
+  		android:padding="8dp"
+  		android:layout_gravity="center_vertical"
+  		android:layout_alignParentLeft="true"
+  		android:src="@drawable/ic_launcher"
+  		/>
+ 	
+ 	<CheckBox
+ 	    android:id="@+id/exportCheckBox"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentRight="true"
+ 	    android:padding="10dp"
+ 	    android:layout_alignTop="@id/photoImageView"
+ 	    android:layout_alignBottom="@id/photoImageView"
+ 	    android:checked="false"
+ 	    android:clickable="false"
+ 	    android:focusable="false"
+ 	    android:focusableInTouchMode="false" />
+ 	
+ 	<TextView
+ 	    android:id="@+id/nameTextView"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignBottom="@id/photoImageView"
+ 	    android:layout_alignTop="@id/photoImageView"
+ 	    android:layout_toLeftOf="@id/exportCheckBox"
+ 	    android:layout_toRightOf="@id/photoImageView"
+ 	    android:ellipsize="end"
+ 	    android:gravity="center_vertical"
+ 	    android:maxLines="1"
+ 	    android:padding="8sp"
+ 	    android:text="First Name Last"
+ 	    android:textColor="#000"
+ 	    android:textSize="20sp" />
+ 	
+	
+</RelativeLayout>
